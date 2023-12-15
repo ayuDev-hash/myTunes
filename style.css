@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+/* Nav-Bar  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #270082;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.site_name h3 {
+  font-size: 30px;
+  font-weight: 600px;
+}
+
+.nav_items ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  color: white;
+}
+.nav_items ul li {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid transparent;
+}
+.nav_items ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+
+.hero {
+  background-image: url(images/hero_image.png);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+.hero h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+.hero p {
+  font-size: 15px;
+}
+.hero_info {
+  background: #281154;
+}
+.hero1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.music_icon {
+  color: white;
+  font-size: 25px;
+}
+.muisc_heading span {
+  color: white;
+  font-size: 29px;
+  font-weight: 400;
+}
+.hero_para {
+  text-align: center;
+  color: white;
+}
+
+.hero_para p {
+  font-weight: 400;
+  margin: 15px 0;
+}
+.hero_para .para1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 120.833% */
+}
+.hero_para .para2 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 161.111% */
+}
+
+.hero1 button {
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  background: #dc0000;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.para3 {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.ipad_video {
+  position: relative;
+  top: 400px;
+  margin-top: -400px;
+}
+.video_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-top: 500px;
+}
+.video_content h3 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px; /* 120.833% */
+}
+.video_content p {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+}
+.video_content button {
+  background: #37008e;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px; /* 161.111% */
+}
+
+.video_sec {
+  background-image: url(./images/video.png);
+  margin-top: 70px;
+}
+.video_info {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.video_info h3 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 120.833% */
+}
+.video_info p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 128.571% */
+}
+.hero,
+.video_sec {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0;
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.card_info h3 {
+  font-size: 34px;
+}
+.card_info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.card_info button {
+  background: #37008e;
+  color: white;
+  font-size: 18px;
+}
+
+footer {
+  background: #1b0058;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 0;
+}
+.footer_info {
+  color: white;
+}
+.footer_info hr {
+  margin-bottom: 20px;
+}
+.footer_info h2 {
+  font-size: 18px;
+}
+.footer_info p {
+  font-size: 14px;
+}
+.footer_lower {
+  background: #270082;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+/* Responsive */
